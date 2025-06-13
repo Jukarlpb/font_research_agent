@@ -7,4 +7,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - run: pip install pre-commit
+      - run: pre-commit install  # Paso nuevo añadido aquí
       - run: pre-commit run --all-files
